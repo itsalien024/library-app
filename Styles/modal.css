@@ -1,0 +1,74 @@
+.modal {
+  display: none; 
+  position: fixed;  
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+}
+
+.modal-content {
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6497b1;
+  margin: 30% auto;
+  padding: 1rem;
+  border: 1px solid #888;
+  border-radius: 2rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title-container label,
+.author-container label,
+.pages-container label {
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+.title-container,
+.author-container,
+.pages-container {
+  height: 3rem;
+  width: 15rem;
+}
+
+#title,
+#author,
+#pageCount {
+  width: 100%;
+  height: 2rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 2px 2px black;
+}
+
+#title:focus,
+#author:focus,
+#pageCount:focus {
+  outline: gray 1px;
+}
+
+.addBook,
+.closeModal {
+  width: 5rem;
+  height: 2rem;
+  box-shadow: 2px 2px black;
+  border-radius: 1rem;
+  background-color: #b3cde0;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/main.css">
+  <link rel="stylesheet" href="Styles/modal.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700&family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+  <script src="Scripts/main.js" type="text/javascript" defer></script>
+  <title>Library</title>
+</head>
+<body>
+  <div class="site-container">
+    <div class="header-container">
+      <span>Library</span>
+      <button id="openModal">Add a Book</button>
+    </div>
+    <div class="library-container">
+      <div class="book-card">
+        <span class="remove-card">Delete</span>
+        <span class="indicator">Title</span>
+        <div class="card-title"><span>a</span></div>
+        <span class="indicator">Author</span>
+        <div class="card-author"></div>
+        <span class="indicator">Pages</span>
+        <div class="card-pages"></div>
+        <span class="indicator">Have you read this book?</span>
+        <div class="card-read"></div>
+      </div>
+      
+    </div>
+
+    <div id="addForm" class="modal">
+      <div class="modal-content">
+        <form action="get" class="book-form">
+          <div class="form-container">
+            <div class="title-container">
+              <label for="title">Book Title</label>
+              <input type="text" name="title" id="title">
+            </div>
+            <div class="author-container">
+              <label for="author">Book Author</label>
+              <input type="text" name="author" id="author">
+            </div>
+            <div class="pages-container">
+              <label for="pageCount">Pages</label>
+              <input type="number" min="1" max="99999" id="pageCount">
+            </div>
+            <div class="read-or-not">
+              <label for="read-check">Have you read this book?</label>
+              <input type="checkbox" id="read-check">
+            </div>
+            <div class="modalButtons">
+              <button type="button" class="addBook">Add</button>
+              <button type="button" class="closeModal">Close</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+</body>
+</html>
