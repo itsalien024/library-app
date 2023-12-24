@@ -54,11 +54,11 @@ function createCard(book) {
   newBookCard.innerHTML = `
   <span class="remove-card">Delete</span>
   <span class="indicator">Title</span>
-  <div class="card-title"><span class="inner-info">${book.title}</span></div>
+  <div class="card-title"><p class="inner-info">${book.title}</p></div>
   <span class="indicator">Author</span>
-  <div class="card-author"><span class="inner-info">${book.author}</span></div>
-  <span class="indicator">pages</span>
-  <div class="card-pages"><span class="inner-info">${book.pages}</span></div>
+  <div class="card-author"><p class="inner-info">${book.author}</p></div>
+  <span class="indicator">Pages</span>
+  <div class="card-pages"><p class="inner-info">${book.pages}</p></div>
   <span class="indicator">Have you read this book?</span>
   <div class="card-read"><button class="read-button">${read.value}</button></div>
   `;
@@ -92,19 +92,6 @@ function createCard(book) {
   }  
 
 } 
-
-readBtn.onclick = function() {
-  if (readBtn.textContent == "Yes") {
-    readBtn.textContent = "No";
-    readBtn.classList.remove("read-button");
-    readBtn.classList.add("unread-button") ;
-  }else if (readBtn.textContent == "No") {
-    readBtn.textContent = "Yes";
-    readBtn.classList.remove("unread-button");
-    readBtn.classList.add("read-button");
-  }
-}
-
 
 
 

@@ -74,8 +74,16 @@ body {
   width: 80%;
 }
 
-.book-card > div > span {
+.book-card > div > p {
+  margin: 0;
   font-weight: bold;
+  font-family: 'Chakra Petch', sans-serif;
+  white-space: normal;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .remove-card {
@@ -85,11 +93,19 @@ body {
   cursor: pointer;
 }
 
-.inner-info {
+.card-title,
+.card-author,
+.card-pages {
+  display: flex;
+}
+
+/* .inner-info {
+  display: flex;
+  justify-content: center;
   overflow-wrap: break-word;
   max-width: 13rem;
   overflow: hidden;
-}
+} */
 
 .read-button {
   width: 100%;
